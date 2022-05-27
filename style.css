@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(48, 10, 63);
+}
+
+#root {
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.letter {
+    opacity: 0;
+    font-size: 60px;
+  	font-family: Inter;
+  	font-weight: 800;
+    transition: all 250ms ease-in-out;
+    color:rgb(237, 194, 232);
+  	margin-bottom:10px;
+}
+
+.fade-in{
+    opacity: 1;
+}
+
+.fade-out{
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #root {
+        line-height: 40px;
+    }
+    .letter {
+        font-size: 40px;
+    }
+}
+    
