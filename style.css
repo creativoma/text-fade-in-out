@@ -12,6 +12,7 @@ body {
     background: rgb(48, 10, 63);
 }
 
+
 #root {
     line-height: 60px;
     padding: 0 20px;
@@ -20,11 +21,11 @@ body {
 .letter {
     opacity: 0;
     font-size: 60px;
-  	font-family: Inter;
-  	font-weight: 800;
+    font-family: Inter;
+    font-weight: 800;
     transition: all 250ms ease-in-out;
     color:rgb(237, 194, 232);
-  	margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 .fade-in{

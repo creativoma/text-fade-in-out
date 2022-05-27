@@ -19,7 +19,6 @@ const imprimeMessage = (a, b) => {
 const animaMessage = (a, b) => {
 
     imprimeMessage(a, b);
-
     const spans = document.querySelectorAll(".letter");
 
     if (raiz.children.length > 0) {
@@ -30,24 +29,22 @@ const animaMessage = (a, b) => {
             }, index * 100);
         });
     }
-
     setTimeout(() => {
         for (let i = 0; i < spans.length; i++) {
             setTimeout(() => {
                 raiz.setAttribute("display", "block");
                 spans[i].classList.add("fade-in");
-            }, 100 * i);
+            }, 150 * i);
         }
-    }, 500);
-
+    }, 1000);
     setTimeout(() => {
         for (let i = 0; i < spans.length; i++) {
             setTimeout(() => {
                 spans[i].classList.remove("fade-in");
                 spans[i].classList.add("fade-out");
-            }, 100 * i);
+            }, 200 * i);
         }
-    }, 5000);
+    }, 10000);
 }
 
-animaMessage("Keep calm and...", "code Javascript");
+animaMessage("Keep calm and...", "code Javascript!");
